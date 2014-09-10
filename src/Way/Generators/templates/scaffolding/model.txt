@@ -1,9 +1,30 @@
-<?php namespace $NAMESPACE$;
+<?php
 
-use Eloquent;
+class $NAME$ extends \LaravelBook\Ardent\Ardent
+{
+    /**
+     * Validation rules
+     * 
+     * @var array
+     */
+    public static $rules = [
+        // 'title' => 'required'
+    ];
 
-class $NAME$ extends Eloquent {
+    /**
+     * Fields that allow mass assignment
+     * 
+     * @var array
+     */
+    protected $fillable = [];
 
-	protected $fillable = [];
-
+    /**
+     * AbstractRepository uses this to know which fields it can query
+     * 
+     * @return array
+     */
+    public function getQueryFields()
+    {
+        return [];
+    }
 }
