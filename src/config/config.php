@@ -22,6 +22,7 @@ return [
 
     'view_template_path' => base_path('vendor/way/generators/src/Way/Generators/templates/view.txt'),
 
+    'repo_template_path' => base_path('vendor/way/generators/src/Way/Generators/templates/repository'),
 
     /*
     |--------------------------------------------------------------------------
@@ -37,6 +38,8 @@ return [
 
     'seed_target_path'   => base_path('database/seeds'),
 
-    'view_target_path'   => base_path('resources/views')
+    'view_target_path'   => base_path('resources/views'),
+
+    'repo_target_path'   => base_path('lib'),
 
 ];
